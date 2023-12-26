@@ -4,15 +4,15 @@
 
 class Real_Stack:
     def __init__(self):
-        self.items=list()
+        self.items=[""]*100
         self.top=-1
 
     def is_empty(self):
         return self.top==-1
 
     def push(self,data):
-        self.items.append(data)
         self.top+=1
+        self.items[self.top]=data
         print("Add in Clipboard : ",data)
 
     def pop(self):
@@ -35,5 +35,8 @@ while(inp):
             Stack.pop()
         case 3:
             Stack.paste()
+            
+
+
             
 
